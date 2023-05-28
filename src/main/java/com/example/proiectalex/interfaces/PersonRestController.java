@@ -19,6 +19,7 @@ public class PersonRestController {
     public ResponseEntity<Void>create(final @RequestBody CreateUpdatePersonDto dto){
         this.service.save(dto);
         return ResponseEntity.ok().build();
+
     }
     @GetMapping
     public ResponseEntity<List<Person>>getAll(){
